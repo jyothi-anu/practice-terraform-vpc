@@ -22,7 +22,7 @@ resource "aws_subnet" "main" {
     local.common_tags,
     {
         #roboshop-dev-publicsubnet-us-east-1a
-        Name = "${var.project}-${var.environment}-publicsubet-${local.az_names[count.index]}"
+        Name = "${var.project}-${var.environment}-public-${local.az_names[count.index]}"
     },
     var.public_subnet_tags
   )

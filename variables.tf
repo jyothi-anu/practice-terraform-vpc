@@ -17,6 +17,6 @@ variable "igw_tags" {
     default = {}
 }
 variable "public_subnets_cidr" {
-    type = list(string)
+    type = map(string)
     default = {} 
 }

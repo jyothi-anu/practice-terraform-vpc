@@ -20,3 +20,8 @@ variable "public_subnets_cidr" {
     type = map(string)
     default = {} 
 }
+variable "public_subnet_tags" {
+    type = map
+    default = {}
+  
+}
